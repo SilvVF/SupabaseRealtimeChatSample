@@ -18,11 +18,11 @@ Each individual one contains the core plugin / supabase client but each feature 
 
  - These will also need to be added to the supabse client on creation in the creatSupabaseClient(url, key) { install(Postgrest) } 
 
-implementation("io.github.jan-tennert.supabase:gotrue-kt:$supabase") // Auth
-implementation("io.github.jan-tennert.supabase:realtime-kt:$supabase") // Realtime
-implementation("io.github.jan-tennert.supabase:postgrest-kt:$supabase") // postgrest
-implementation("io.github.jan-tennert.supabase:storage-kt:VERSION") // Storage
-implementation("io.github.jan-tennert.supabase:functions-kt:VERSION") // Functions
+- implementation("io.github.jan-tennert.supabase:gotrue-kt:$supabase") // Auth
+- implementation("io.github.jan-tennert.supabase:realtime-kt:$supabase") // Realtime
+- implementation("io.github.jan-tennert.supabase:postgrest-kt:$supabase") // postgrest
+- implementation("io.github.jan-tennert.supabase:storage-kt:VERSION") // Storage
+- implementation("io.github.jan-tennert.supabase:functions-kt:VERSION") // Functions
 ![carbon (2)](https://user-images.githubusercontent.com/98186105/205532004-718efd8d-0076-4a59-83fa-6ff0136f7e23.png)
 
 
@@ -32,8 +32,8 @@ e.g. the CIO engine
 
 id("org.jetbrains.kotlin.plugin.serialization")
   
-implementation("io.ktor:ktor-client-cio:2.1.3")
-implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")
+- implementation("io.ktor:ktor-client-cio:2.1.3")
+- implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")
  
 ![carbon (1)](https://user-images.githubusercontent.com/98186105/205531738-b82fb5f0-e5e3-4949-8e4a-ad1779837e90.png)
 
