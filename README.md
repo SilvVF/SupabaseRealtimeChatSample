@@ -42,6 +42,10 @@ implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")
 
 The app is built usingg ComposeUI and Kotlin.
 
+### root package - supabasechatkt
+
+This contains the ChatViewModel which is used to persist the chat messages for the UI on things like configuration changes and also gives access to ViewModelScope to make lifecylce aware calls to the data layer functions. It also contains the MainActivity it is using a single activity and only one screen.
+
 ### data package
 
 Inside the data package is the ChatService class, Message data class, and the SupabaseClient.kt file
@@ -57,11 +61,5 @@ allows realtime updates on any changes to the database. When an insert is made t
 ![Screenshot_20221204-213652 (1)](https://user-images.githubusercontent.com/98186105/205538597-57e3aaf4-9c52-44f1-95d3-56b41e9b78be.png)
 ![Screenshot_20221204-213605](https://user-images.githubusercontent.com/98186105/205538726-52539609-dcd5-4d33-9f94-c8f42ab5a0c5.png)
 
-This package contains all of the compose UI compnoents for displaying the chat messages.
+This package contains all of the compose UI components for displaying the chat messages.
 
-
-
-
-### root package - supabasechatkt
-
-This contains the ChatViewModel which is used to persist the chat messages for the UI on things like configuration changes and also gives access to ViewModelScope to make lifecylce aware calls to the data layer functions. It also contains the MainActivity it is using a single activity and only one screen.
