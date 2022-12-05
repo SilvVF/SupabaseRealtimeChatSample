@@ -14,28 +14,33 @@ Each row in the table represents a single message sent by a user the Model Messa
 This app uses the supabase-kt client. https://github.com/supabase-community
 
 To start first add the dependencies to the app level build.gradle file - in a single module project this will say build.gradle(:app).
-Each individual one contains the core plugin / supabase client but each feature on the community tab has a dependency
-carbon.png![carbon](https://user-images.githubusercontent.com/98186105/205530116-ee57b79d-949a-400c-b01f-23d20c5165a4.png)
+Each individual one contains the core plugin / supabase client but each feature on the community tab has a dependency.
+
+ - These will also need to be added to the supabse client on creation in the creatSupabaseClient(url, key) { install(Postgrest) } 
+
+implementation("io.github.jan-tennert.supabase:gotrue-kt:$supabase") // Auth
+implementation("io.github.jan-tennert.supabase:realtime-kt:$supabase") // Realtime
+implementation("io.github.jan-tennert.supabase:postgrest-kt:$supabase") // postgrest
+implementation("io.github.jan-tennert.supabase:storage-kt:VERSION") // Storage
+implementation("io.github.jan-tennert.supabase:functions-kt:VERSION") // Functions
+![carbon (2)](https://user-images.githubusercontent.com/98186105/205532004-718efd8d-0076-4a59-83fa-6ff0136f7e23.png)
 
 
 After that make sure to add the ktor client and kotlinxserialization https://github.com/Kotlin/kotlinx.serialization .
 add ktor client engine (if you don't already have one, see https://ktor.io/docs/http-client-engines.html for all engines)
 e.g. the CIO engine
 
-plugins {
-    ...
-    id 'org.jetbrains.kotlin.plugin.serialization'
-}
-dependencies {
-  ...
-  implementation("io.ktor:ktor-client-cio:2.1.3")
-  implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1"
-}
+id("org.jetbrains.kotlin.plugin.serialization")
+  
+implementation("io.ktor:ktor-client-cio:2.1.3")
+implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")
+ 
+![carbon (1)](https://user-images.githubusercontent.com/98186105/205531738-b82fb5f0-e5e3-4949-8e4a-ad1779837e90.png)
 
 
 ## Inside the app
 
-The app is built using ComposeUI and Kotlin.
+The app is built usingg ComposeUI and Kotlin.
 
 ### data package
 
