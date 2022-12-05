@@ -56,9 +56,9 @@ allows realtime updates on any changes to the database. When an insert is made t
 
 This package contains all of the compose UI compnoents for displaying the chat messages.
 
-![Screenshot_20221204-213652](https://user-images.githubusercontent.com/98186105/205537652-ca96c8f7-cd91-4f19-a4f9-0c230144e623.png)
+![Screenshot_20221204-213652](https://user-images.githubusercontent.com/98186105/205537652-ca96c8f7-cd91-4f19-a4f9-0c230144e623.png=450x250)
 
-![Screenshot_20221204-213605](https://user-images.githubusercontent.com/98186105/205537725-e1aaf427-6017-4838-ad63-9c4d23b817e3.png)
+![Screenshot_20221204-213605](https://user-images.githubusercontent.com/98186105/205537725-e1aaf427-6017-4838-ad63-9c4d23b817e3.png=450x250)
 
 
 ### root package - supabasechatkt
