@@ -1,4 +1,4 @@
-# SupabaseRealtimeChatSample
+# SupabaseRealtimeChatSample Kotlin
 
 This is a simple chat app made using the supabase-kt client. https://github.com/supabase-community
 
