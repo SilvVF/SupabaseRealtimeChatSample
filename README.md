@@ -1,6 +1,7 @@
 # SupabaseRealtimeChatSample Kotlin
 
 This is a simple chat app made using the supabase-kt client. https://github.com/supabase-community
+The IOS / Swift version can be found here -> https://github.com/SilvVF/SupabaseRealtimeChatSwift
 
 ![image](https://user-images.githubusercontent.com/98186105/205529386-4342f5ac-b137-49ee-b6ad-5553f3b3c7f4.png)
 
